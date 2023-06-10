@@ -12,7 +12,21 @@ class Withdrawal {
 
 }
 
+class Deposit {
 
+  constructor(amount) {
+    this.amount = amount;
+  }
+
+  commit() {
+    balance += this.amount;
+  }
+
+}
+
+t3 = new Deposit(120.00);
+t3.commit();
+console.log('Transaction 3:', t3);
 
 
 // DRIVER CODE BELOW
